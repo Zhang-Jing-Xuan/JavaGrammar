@@ -1,0 +1,29 @@
+package display;
+
+public class Display {
+	private int value=0;//private关键字只能用于成员变量，成员函数
+	private int limit=value;
+	
+	public Display(int limit){
+		this.limit=limit;
+	}
+	public void increace() {
+		value++;
+		if(value==limit) {
+			value=0;
+		}
+	}
+	 int getValue() {//friendly,同一个包内可以访问
+		return value;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Display d=new Display(24);
+		//d.value++;可以
+		for(;;) {
+			d.increace();
+			System.out.println(d.getValue());
+		}
+	}
+
+}

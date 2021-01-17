@@ -1,0 +1,24 @@
+package test_2;
+
+import java.util.Scanner;
+
+public class Test_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello World!");
+		Scanner in=new Scanner(System.in);
+		char c='\u0041';//char c='A';
+//		System.out.println("abc\bd");
+//		System.out.println("123\t123");
+//		System.out.println("1\t123");
+		Integer k=10;
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Character.toLowerCase('I'));
+		System.out.println(Math.abs(-12));
+		System.out.println(Math.round(10.01));
+		System.out.println(Math.random()*100);
+		System.out.println(Math.pow(2,3.2));
+	}
+
+}
